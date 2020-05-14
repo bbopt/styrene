@@ -1,0 +1,10 @@
+DIMENSION      8
+BB_EXE         ./blackbox/truth/truth.exe
+BB_OUTPUT_TYPE EB EB EB EB PB PB PB PB PB PB PB OBJ
+x0             ./points/x0.txt
+LOWER_BOUND    *   0.0
+UPPER_BOUND    * 100.0
+
+MAX_BB_EVAL    1000
+
+DISPLAY_STATS BBE SOL OBJ
