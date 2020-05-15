@@ -1,7 +1,3 @@
-# STYRENE
-
-### Description:
-
 **STYRENE** is a blackbox optimization problem offered as a benchmark case for the derivative-free optimization community. It simulates a styrene production process, seen as a blackbox simulation for which derivatives do not exist.
 The objective is to maximize the net present value subject to several process and economic constraints.
 The code is standard C++. It has been initially developed by [Vincent Béchard](https://www.linkedin.com/in/vincentbechard/).
