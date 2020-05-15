@@ -1,17 +1,23 @@
-# UNDER CONSTRUCTION
-
-
 # STYRENE
 
 ### Description:
 
-The STYRENE blackbox optimization problem.
+STYRENE is a blackbox optimization problem. It simulates a styrene production process, seen as a blackbox simulation.
+The objective is to maximize the net present value subject to several process and economic constraints.
+The code is standard C++. It has been initially developed by [Vincent Béchard](https://www.linkedin.com/in/vincentbechard/).
 
-SGTE
+Two versions are provided in the [`blackbox/`](blackbox/) directory:
+- [`blackbox/truth/`](blackbox/truth/) corresponds to the "true" blackbox, the one to optimize.
+- [`blackbox/surrogate/`](blackbox/surrogate/) corresponds to a static surrogate, i.e. a cheaper but imprecise approximation of the true blackbox.
+
+
 
 BENCHMARK
 
 C++
+
+VARS
+CSTR
 
 BORNES
 X0
@@ -70,14 +76,11 @@ Please cite it if you use STYRENE.
 ```
 @article{AuBeLe08,
   Author    = {C. Audet and V. B\'echard and S. {Le~Digabel}},
-  Title     = {Nonsmooth optimization through Mesh Adaptive Direct Search
-               and Variable Neighborhood Search},
+  Title     = {Nonsmooth optimization through Mesh Adaptive Direct Search and Variable Neighborhood Search},
   Journal   = {Journal of Global Optimization},
   Volume    = {41},
   Number    = {2},
   Pages     = {299--318},
-  Publisher = {Springer},
-  Issn      = {0925-5001 (Print) 1573-2916 (Online)},
   Doi       = {10.1007/s10898-007-9234-1},
   Url       = {http://dx.doi.org/doi:10.1007/s10898-007-9234-1},
   Year      = {2008}
