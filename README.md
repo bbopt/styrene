@@ -20,9 +20,9 @@ X0
 ### Compilation:
 
 Makefiles are provided for the true and surrogate problems.
-To compile, go to ```./blackbox/truth/``` or ```./blackbox/surrogate/``` and type ```make```.
-This will create the executable files ```./blackbox/truth/truth.exe``` and ```./blackbox/surrogate/surrogate.exe```.
-To compile on Windows, it is possible to create a MS Visual project from the C++ source files. For convenience, an already compiled executable of the true problem is provided (```./blackbox/truth/truth_WINDOWS.exe```).
+To compile, go to [`blackbox/truth/`](blackbox/truth/) or [`blackbox/surrogate/`](blackbox/surrogate/) and type `make`.
+This will create the executable files `blackbox/truth/truth.exe` and `blackbox/surrogate/surrogate.exe`.
+To compile on Windows, it is possible to create a MS Visual project from the C++ source files. For convenience, an already compiled executable of the true problem is provided ([`blackbox/truth/truth_WINDOWS.exe`](blackbox/truth/truth_WINDOWS.exe)).
 
 ### Usage:
 
@@ -36,11 +36,11 @@ to execute the true blackbox and
 ```
 to execute the surrogate.
 
-```x.txt``` is a text file containing the 8 coordinates of the point to evaluate, each in [0;100], separated by spaces or line breaks.
+`x.txt` is a text file containing the 8 coordinates of the point to evaluate, each in `[0;100]`, separated by spaces or line breaks.
 
 ### Best solution:
 
-The current best solution is provided in ```points/xs.txt```. Its coordinates are
+The current best solution is provided in [`points/xs.txt`](points/xs.txt). Its coordinates are
 ```
 100 87.78846202 95.30539348 0.01984 0 49.03658841 32.27499794 41.10932603
 ```
