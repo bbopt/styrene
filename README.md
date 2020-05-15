@@ -58,7 +58,7 @@ This solution has been obtained from a design proposed by [Solène Kojtych](http
 
 ### Solvers:
 
-The [`solvers/`](solvers/) directory includes executions of the two solvers [`NOMAD`](https://www.gerad.ca/nomad/) and [`PSwarm`](http://www.norg.uminho.pt/aivaz/pswarm/). Note that the latter showcases an interface between **STYRENE** and `MATLAB`.
+The [`solvers/`](solvers/) directory includes executions of the two solvers [`NOMAD`](https://www.gerad.ca/nomad/) and [`PSwarm`](http://www.norg.uminho.pt/aivaz/pswarm/). Note that the latter showcases an interface between **STYRENE** and MATLAB.
 
 
 ### Reference:
