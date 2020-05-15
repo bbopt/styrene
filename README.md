@@ -53,7 +53,7 @@ which gives
 ```
 for an objective value of ```-3.37101e+07```.
 
-This solution has been obtained from a design proposed by [Solène Kojtych](https://www.gerad.ca/en/people/solene-kojtych). The previous best solution was provided by [Mathieu Tanneau](https://www.gerad.ca/en/people/mathieu-tanneau).
+This solution has been obtained with [`NOMAD`](https://www.gerad.ca/nomad/) from a design proposed by [Solène Kojtych](https://www.gerad.ca/en/people/solene-kojtych). The previous best solution was provided by [Mathieu Tanneau](https://www.gerad.ca/en/people/mathieu-tanneau).
 
 
 ### Solvers:
