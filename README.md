@@ -34,7 +34,7 @@ to execute the true blackbox and
 ```
 to execute the surrogate.
 
-`x.txt` is a text file containing the 8 coordinates of the point to evaluate, each in `[0;100]`, separated by spaces or line breaks.
+`x.txt` is a text file containing the 8 coordinates of the point to evaluate, each in `[0;100]`, separated by spaces or line breaks. Examples of points can be found in [`points/`](points/).
 
 ### Best solution:
 
