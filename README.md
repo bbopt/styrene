@@ -2,25 +2,21 @@
 
 ### Description:
 
-STYRENE is a blackbox optimization problem. It simulates a styrene production process, seen as a blackbox simulation.
+**STYRENE** is a blackbox optimization problem offered as a benchmark case for the derivative-free optimization community. It simulates a styrene production process, seen as a blackbox simulation for which derivatives do not exist.
 The objective is to maximize the net present value subject to several process and economic constraints.
 The code is standard C++. It has been initially developed by [Vincent Béchard](https://www.linkedin.com/in/vincentbechard/).
 
 Two versions are provided in the [`blackbox/`](blackbox/) directory:
 - [`blackbox/truth/`](blackbox/truth/) corresponds to the "true" blackbox, the one to optimize.
-- [`blackbox/surrogate/`](blackbox/surrogate/) corresponds to a static surrogate, i.e. a cheaper but imprecise approximation of the true blackbox.
+- [`blackbox/surrogate/`](blackbox/surrogate/) corresponds to a static surrogate, i.e. a cheaper but imprecise approximation of the true blackbox. It is typically used to assist an optimization algorithm for the optimization of the true problem.
 
+The problem is defined by 8 optimization variables, all scaled in `[0;100]`, and 11 constraints of the form `$c_j(x) \leq 0$`, divided in two groups: 4 unrelaxable and nonquantifiable constraints and 7 relaxable and quantifiable constraints, following the taxonomy of constraints defined [here](https://www.mcs.anl.gov/~wild/taxcon/).
 
+The blackbox execution gives 12 outputs: The 11 constraints values and the objective. A point is feasible when the 11 first outputs are lower than or equal to zero.
 
-BENCHMARK
-
-C++
-
-VARS
-CSTR
-
-BORNES
-X0
+Finally two starting points are provided in [`points/`](points/):
+- [`points/x0_feasible.txt`](points/x0_feasible.txt): Feasible.
+- [`points/x0_infeasible.txt`](points/x0_infeasible.txt): Infeasible.
 
 
 ### Compilation:
@@ -66,12 +62,12 @@ This solution has been obtained from a design proposed by [Solène Kojtych](http
 
 ### Solvers:
 
-MATLAB
+The [`solvers/`](solvers/) directory includes executions of the two solvers [`NOMAD`](https://www.gerad.ca/nomad/) and [`PSwarm`](http://www.norg.uminho.pt/aivaz/pswarm/). Note that the latter showcases an interface between **STYRENE** and `MATLAB`.
 
 
 ### Reference:
 The problem was described in the followind [reference](http://dx.doi.org/doi:10.1007/s10898-007-9234-1).
-Please cite it if you use STYRENE.
+Please cite it if you use **STYRENE**.
 
 ```
 @article{AuBeLe08,
