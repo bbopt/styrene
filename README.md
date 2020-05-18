@@ -6,7 +6,7 @@ Two versions are provided in the [`blackbox/`](blackbox/) directory:
 - [`blackbox/truth/`](blackbox/truth/) corresponds to the "true" blackbox, the one to optimize.
 - [`blackbox/surrogate/`](blackbox/surrogate/) corresponds to a static surrogate, i.e. a cheaper but imprecise approximation of the true blackbox. It is typically used to assist an optimization algorithm for the optimization of the true problem.
 
-The problem is defined by 8 optimization variables, all scaled in `[0;100]`, and 11 constraints of the form c_j(x) <= 0, divided in two groups: 4 unrelaxable and nonquantifiable constraints and 7 relaxable and quantifiable constraints, following the taxonomy of constraints defined [here](https://www.mcs.anl.gov/~wild/taxcon/).
+The problem is defined by 8 optimization variables, all scaled in `[0;100]`, and 11 constraints of the form `c_j(x) <= 0`, divided in two groups: 4 unrelaxable and nonquantifiable constraints and 7 relaxable and quantifiable constraints, following the taxonomy of constraints defined [here](https://www.mcs.anl.gov/~wild/taxcon/).
 
 The blackbox execution gives 12 outputs: The 11 constraints values and the objective. A point is feasible when the 11 first outputs are lower than or equal to zero.
 
