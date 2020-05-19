@@ -68,7 +68,7 @@ Please cite it if you use **STYRENE**.
 ```
 @article{AuBeLe08,
   Author    = {C. Audet and V. B\'echard and S. {Le~Digabel}},
-  Title     = {Nonsmooth optimization through Mesh Adaptive Direct Search and Variable Neighborhood Search},
+  Title     = {{Nonsmooth optimization through Mesh Adaptive Direct Search and Variable Neighborhood Search}},
   Journal   = {Journal of Global Optimization},
   Volume    = {41},
   Number    = {2},
