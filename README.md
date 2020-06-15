@@ -40,7 +40,7 @@ to execute the surrogate.
 
 The current best solution is provided in [`points/xs.txt`](points/xs.txt). Its coordinates are
 ```
-100 87.78846202 95.30539348 0.01984 0 49.03658841 32.27499794 41.10932603
+99.999953599999997778 94.029649999999946886    95.15957000000000221 0.04209999999999999853   0 50.142644800000006455   32.61161999999998784 51.59949660000002325
 ```
 
 The outputs of the blackbox are obtained with the command
@@ -49,11 +49,11 @@ The outputs of the blackbox are obtained with the command
 ```
 which gives
 ```
-0 0 0 0 -0.00712888 -0.00920394 -0.581333 -0.75 -6696 -0.566366 -0.413865 -3.37101e+07
+0 0 0 0 -0.00712512 -0.00834278 -0.579333 -0.75 -6691 -0.565971 -0.414844 -3.37137e+07
 ```
-for an objective value of ```-3.37101e+07```.
+for an objective value of ```-3.37137e+07```.
 
-This solution has been obtained with [`NOMAD`](https://www.gerad.ca/nomad/) from a design proposed by [Solène Kojtych](https://www.gerad.ca/en/people/solene-kojtych). The previous best solution was provided by [Mathieu Tanneau](https://www.gerad.ca/en/people/mathieu-tanneau).
+This solution has been obtained by [Guillaume Lameynardie](https://www.gerad.ca/en/people/guillaume-lameynardie). The previous best solutions were provided by [Solène Kojtych](https://www.gerad.ca/en/people/solene-kojtych) and [Mathieu Tanneau](https://www.gerad.ca/en/people/mathieu-tanneau).
 
 
 ### Solvers:
