@@ -242,7 +242,10 @@ double column::get_cost()
 {
   //cost of vessel
   vol=(0.45*N)*(pow(300*D->v, 1.5)/2.4/sqrt(B->v))*sqrt(D->m/B->m);
-  if(vol<0.3) vol=0.3; if(vol>520)vol=520;
+  if(vol<0.3)
+    vol=0.3;
+  else if(vol>520)
+    vol=520;
   money = 3.4974+0.4485*log10(vol)+0.1074*pow(log10(vol),2);
   money = pow(10, money);
   P= (P-1)*101.325/100;
@@ -255,12 +258,18 @@ double column::get_cost()
   money+=1.5*pow(10, diam);
   //cost of reboiler     U=5250W/m2.K
   vol=fabs(Q_reboil)/0.85/5.25/15.0;
-  if(vol<10) vol=10; if(vol>100) vol=100;
+  if(vol<10)
+    vol=10;
+  else if(vol>100)
+    vol=100;
   vol = 4.4646-0.5277*log10(vol)+0.3955*pow(log10(vol),2);
   money += (1.63+1.66*2.5)*pow(10, vol);
   //cost of condenser    U=1850W/m2.K
   vol=fabs(Q_condens)/0.85/1.85/(0.5*(T_d-298));
-  if(vol<1) vol=1; if(vol>100) vol=100;
+  if(vol<1)
+    vol=1;
+  else if(vol>100)
+    vol=100;
   vol = 3.9912+0.0668*log10(vol)+0.243*pow(log10(vol),2);
   money += (1.74+1.55*2.5)*pow(10, vol);
   money = money*MS_YEAR/MS_2001;

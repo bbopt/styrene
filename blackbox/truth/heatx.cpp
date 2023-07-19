@@ -87,11 +87,17 @@ void heatx::write()
 double heatx::get_cost ( void ) {
   if(mode==1) min=fabs(Q)/0.225/(eta)/fabs(out->T-in->T);
   if(mode==0) min=fabs(Qreal)/0.25/(eta)/fabs(out->T-in->T);
-  if(min<10) min=10; if(min>1000) min=1000;
+  if(min<10)
+    min=10;
+  else if(min>1000)
+    min=1000;
   max = 4.3247-0.303*log10(min)+0.1634*pow(log10(min),2);
   T=in->P;
   T = (T-1)*1.01325;
-  if (fabs(T)<EPS) T=0.1; if(T>100) T=100;
+  if (fabs(T)<EPS)
+    T=0.1;
+  if(T>100)
+    T=100;
   min=0.03881-0.11272*log10(T)+0.08183*pow(log10(T),2);
   min=pow(10, min);
   max = (1.63+1.66*2.5*min)*pow(10, max);

@@ -142,7 +142,10 @@ double pfr::f ( int eq , double l , double * y ) {
 
 double pfr::get_cost ( void ) {
   dL=L*pi*pow(D,2)/4.0;
-  if(dL<0.3) dL=0.3; if(dL>520) dL=520;
+  if(dL<0.3)
+    dL=0.3;
+  else if(dL>520)
+    dL=520;
   sum = 3.4974+0.4485*log10(dL)+0.1074*pow(log10(dL),2);
   sum = pow(10, sum);
   P= (P-1)*101.325/100;

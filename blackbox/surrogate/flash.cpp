@@ -182,7 +182,10 @@ void flash::write() {
 
 double flash::get_cost ( void ) {
   vol=15.0*(L->v+V->v);
-  if(vol<0.3) vol=0.3; if(vol>520)vol=520;
+  if(vol<0.3)
+    vol=0.3;
+  else if(vol>520)
+    vol=520;
   step = 3.4974+0.4485*log10(vol)+0.1074*pow(log10(vol),2);
   step = pow(10, step);
   P= (P-1)*101.325/100;

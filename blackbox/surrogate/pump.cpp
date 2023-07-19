@@ -57,7 +57,10 @@ void pump::write() {
 double pump::get_cost ( void ) {
 
   if ( fabs(state-1) < EPS ) {
-    if(W<450) W=450; if(W>3000)W=3000;
+    if(W<450)
+      W=450;
+    else if(W>3000)
+      W=3000;
     tmp=2.2891+1.3604*log10(W)-0.1027*pow(log10(W),2);
     tmp=3.2*pow(10.0, tmp);
     tmp1=2.4604+1.4191*log10(W)-0.1798*pow(log10(W),2);
@@ -65,11 +68,17 @@ double pump::get_cost ( void ) {
     tmp+=tmp1;
   }
   else {
-    if(W<1) W=1; if(W>300)W=300;
+    if(W<1)
+      W=1;
+    else if(W>300)
+      W=300;
     tmp=3.3892+0.0536*log10(W)+0.1538*pow(log10(W),2);
     tmp=pow(10.0, tmp);
     P=(P-1.0)*101.325/100.0;
-    if (P<EPS) P=1; if(P>100) P=100;
+    if (P<EPS)
+      P=1;
+    if(P>100)
+      P=100;
     W = -0.3925+0.3957*log10(P)-0.00226*pow(log10(P),2);
     W=pow(10.0, W); if(W<1) W=1;
     tmp*=(1.89+1.35*W*1.8);
