@@ -73,9 +73,9 @@ Please cite it if you use **STYRENE**:
   Volume    = {41},
   Number    = {2},
   Pages     = {299--318},
+  Year      = {2008},
   Doi       = {10.1007/s10898-007-9234-1},
-  Url       = {http://dx.doi.org/doi:10.1007/s10898-007-9234-1},
-  Year      = {2008}
+  Url       = {http://dx.doi.org/doi:10.1007/s10898-007-9234-1}
 }
 ```
 
