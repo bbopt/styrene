@@ -61,9 +61,9 @@ This solution has been obtained by [Guillaume Lameynardie](https://www.gerad.ca/
 The [`solvers/`](solvers/) directory includes executions of the two solvers [`NOMAD`](https://www.gerad.ca/nomad/) and [`PSwarm`](http://www.norg.uminho.pt/aivaz/pswarm/). Note that the latter showcases an interface between **STYRENE** and MATLAB.
 
 
-### Reference:
+### References:
 The problem was described in the followind [reference](http://dx.doi.org/doi:10.1007/s10898-007-9234-1).
-Please cite it if you use **STYRENE**.
+Please cite it if you use **STYRENE**:
 
 ```
 @article{AuBeLe08,
@@ -76,5 +76,21 @@ Please cite it if you use **STYRENE**.
   Doi       = {10.1007/s10898-007-9234-1},
   Url       = {http://dx.doi.org/doi:10.1007/s10898-007-9234-1},
   Year      = {2008}
+}
+```
+
+Also note that a triobjective version of **STYRENE** is defined in this [article](https://dx.doi.org/10.1016/j.ejor.2009.11.010):
+
+```
+@article{AuSaZg2010a,
+  Author   = {C. Audet and G. Savard and W. Zghal},
+  Title    = {{A mesh adaptive direct search algorithm for multiobjective optimization}},
+  Journal  = {European Journal of Operational Research},
+  Volume   = {204},
+  Number   = {3},
+  Pages    = {545--556},
+  Year     = {2010},
+  Doi      = {10.1016/j.ejor.2009.11.010},
+  Url      = {https://dx.doi.org/10.1016/j.ejor.2009.11.010}
 }
 ```
